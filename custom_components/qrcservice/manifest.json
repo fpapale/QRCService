@@ -10,8 +10,7 @@
     "iot_class": "local_push",
     "issue_tracker": "https://github.com/fpapale/QRCService/issues",
     "requirements": [
-        "qrcode[pil]>=7.4.2",
-        "Pillow>=10.0.0"
+        "qrcode[pil]>=7.4.2"
     ],
-    "version": "1.0.1"
+    "version": "1.0.2"
 }
