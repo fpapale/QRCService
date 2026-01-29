@@ -1,0 +1,10 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Setup QRC Service",
+                "description": "Configure QR code generation settings"
+            }
+        }
+    }
+}

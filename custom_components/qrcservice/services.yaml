@@ -1,0 +1,50 @@
+generate_wifi_qr:
+  name: Generate WiFi QR Code
+  description: Generate a QR code for WiFi network credentials
+  fields:
+    ssid:
+      name: SSID
+      description: WiFi network SSID (name)
+      required: true
+      example: "MyWiFiNetwork"
+      selector:
+        text:
+    password:
+      name: Password
+      description: WiFi network password
+      required: true
+      example: "MySecurePassword123"
+      selector:
+        text:
+    security:
+      name: Security Type
+      description: WiFi security type
+      required: false
+      default: "WPA"
+      example: "WPA"
+      selector:
+        select:
+          options:
+            - "WPA"
+            - "WEP"
+            - "nopass"
+    size:
+      name: QR Code Size
+      description: Size of the QR code image in pixels
+      required: false
+      default: 128
+      example: 128
+      selector:
+        number:
+          min: 64
+          max: 512
+          step: 8
+          mode: slider
+    filename:
+      name: Filename
+      description: Output filename (saved in www/qrcodes/)
+      required: false
+      default: "wifi_qr.png"
+      example: "guest_wifi.png"
+      selector:
+        text:

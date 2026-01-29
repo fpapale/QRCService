@@ -1,0 +1,7 @@
+{
+    "name": "QRC Service",
+    "render_readme": true,
+    "domains": [
+        "qrcservice"
+    ]
+}

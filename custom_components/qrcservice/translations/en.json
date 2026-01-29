@@ -1,0 +1,23 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Setup QRC Service",
+                "description": "Configure QR code generation settings",
+                "data": {
+                    "output_dir": "Output Directory (relative to config)",
+                    "default_size": "Default QR Code Size (pixels)",
+                    "error_correction": "Error Correction Level"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_path": "Invalid output directory path",
+            "unknown": "Unexpected error"
+        },
+        "abort": {
+            "already_configured": "QRC Service is already configured"
+        }
+    }
+}
